@@ -1,23 +1,62 @@
 aid: beijingruidaentechnologyco
+
 name: Beijingruidaentechnologyco
-description: 'Beijingruidaentechnologyco is a company surfaced via the API Evangelist harvest backlog
-  (source: secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Beijingruidaentechnologyco is a stub entry created by the API Evangelist harvest process. The company appears in secondary-market listings but no official website or public API documentation could be located after exhaustive web searches. Consequently, detailed information about its services, products, or technical offerings is unavailable at this time.'
+
 url: https://raw.githubusercontent.com/api-evangelist/beijingruidaentechnologyco/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Technology
+- China
+- API
+- Data
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
-- type: Website
-  url: https://equityzen.com/company/beijingruidaentechnologyco
+
+  - type: Hosts
+    url: hosts/beijingruidaentechnologyco-hosts.yml
+  - type: Vendors
+    url: vendors/beijingruidaentechnologyco-vendors.yml
+  - type: DomainSecurity
+    url: security/beijingruidaentechnologyco-domain-security.yml
+  - type: Website
+    url: https://equityzen.com/company/beijingruidaentechnologyco
+
+apis: []
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: All attempts to fetch the company's domain (www.ruidaen.com, en.ruidaen.com) failed, providing no machine‑readable API specifications.
+  evidence:
+  - url: https://www.ruidaen.com
+    status: unreachable
+  - url: https://en.ruidaen.com
+    status: unreachable
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: minimal
+  artifacts_added: 2
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
